@@ -16,6 +16,7 @@ public class CodeRunner {
   int h7=0;
   int h8=0;
   int h9=0;
+
   public CodeRunner() {
   }
 
@@ -159,47 +160,91 @@ public class CodeRunner {
 
       fill(255, 0, 0);
       
-      if(cr.ran()==1&&h1==0){
-        //if (mousePressed==true) {
+      if((h1==0&&mousePressed==true)){
+        if ((h2==1||h3==1||h4==1||h5==1||h9==1||h7==1)){
          x=50;
          y=120;
-        //}
-      }
-      if(cr.ran()==2&&h2==0){
-        if (mousePressed==true) {
-         x=250;
-         y=120;
+         textSize(100);
+      fill(255, 0, 0);
+      text("X", x, y);
+      mousePressed = false;
         }
+        
       }
-      if(cr.ran()==3&&h3==0){
-        if (mousePressed==true) {
+      if(cr.ran()==2||(h2==0&&mousePressed==true)){
+          if (h1==1||h5==1||h3==1||h8==1){
+         x=250;
+         y=120;
+         textSize(100);
+      fill(255, 0, 0);
+      text("X", x, y);
+      mousePressed = false;
+          }
+        
+      }
+      if(cr.ran()==3&&h3==0&&mousePressed==true){
+        
          x=450;
          y=120;
-        }
+         textSize(100);
+      fill(255, 0, 0);
+      text("X", x, y);
+      mousePressed = false;
+        
       }
-      if(cr.ran()==4&&h4==0){
+      if(cr.ran()==4&&h4==0&&mousePressed==true){
          x=50;
          y=320;
+         textSize(100);
+      fill(255, 0, 0);
+      text("X", x, y);
+      mousePressed = false;
+         
       }
-      if(cr.ran()==5&&h5==0){
+      if(cr.ran()==5&&h5==0&&mousePressed==true){
          x=250;
          y=320;
+         textSize(100);
+      fill(255, 0, 0);
+      text("X", x, y);
+      mousePressed = false;
+         
       }
-      if(cr.ran()==6&&h6==0){
+      if(cr.ran()==6&&h6==0&&mousePressed==true){
          x=450;
          y=320;
+         textSize(100);
+      fill(255, 0, 0);
+      text("X", x, y);
+      mousePressed = false;
+         
       }
-      if(cr.ran()==7&&h7==0){
+      if(cr.ran()==7&&h7==0&&mousePressed==true){
          x=50;
          y=520;
+         textSize(100);
+      fill(255, 0, 0);
+      text("X", x, y);
+      mousePressed = false;
+         
       }
-      if(cr.ran()==8&&h8==0){
+      if(cr.ran()==8&&h8==0&&mousePressed==true){
          x=250;
          y=520;
+         textSize(100);
+      fill(255, 0, 0);
+      text("X", x, y);
+      mousePressed = false;
+         
       }
-      if(cr.ran()==9&&h9==0){
+      if(cr.ran()==9&&h9==0&&mousePressed==true){
          x=450;
          y=520;
+         textSize(100);
+      fill(255, 0, 0);
+      text("X", x, y);
+      mousePressed = false;
+         
       }
       if(mousePressed==true){
       textSize(100);
