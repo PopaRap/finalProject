@@ -25,6 +25,7 @@ void draw() {
 
   cr.player();
   cr.position();
+  cr.checkwhowins();
   
 
   //cr.comp();
@@ -42,4 +43,5 @@ void draw() {
 
 //}
 void mousePressed() {
+  cr.ran();
 }
